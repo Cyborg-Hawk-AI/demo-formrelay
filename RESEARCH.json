@@ -1,0 +1,102 @@
+{
+  "idea": {
+    "name": "FormRelay",
+    "fingerprint": "india-smb-form-to-whatsapp-spreadsheet-automation-router",
+    "pitch": "Route form submissions to WhatsApp, sheets, and CRMs automatically for Indian SMBs.",
+    "cluster": "Manual data entry & repetitive SMB operations (India)",
+    "target_customer": "Indian small business owners (retail, services, coaching, clinics) who receive leads via Google Forms, Typeform, or website contact forms and manually copy data into WhatsApp messages and spreadsheets",
+    "core_features": [
+      "Connect any form (Google Forms, Typeform, native embed) via webhook",
+      "Template-based WhatsApp message auto-send on new submission (via WhatsApp Business API)",
+      "Auto-append rows to Google Sheets with field mapping UI",
+      "Scheduled follow-up message sequences (day 1, day 3, day 7)",
+      "Simple dashboard showing submission volume and message delivery status"
+    ],
+    "pricing_model": "Tiered monthly subscription based on submission volume",
+    "price_point": "\u20b9999/month (Starter, 500 submissions) \u00b7 \u20b92,499/month (Growth, 2,000 submissions)",
+    "gtm_channel": "WhatsApp groups for Indian SMB communities, r/indianstartups, YouTube Shorts demos in Hindi showing the exact workflow, partnerships with local digital marketing freelancers who resell",
+    "competitive_landscape": "Zapier/Make exist but are too technical and priced in USD. Pabbly Connect is a competitor but generic and not WhatsApp-first. No India-focused, WhatsApp-native form router with INR pricing and Hindi UI exists.",
+    "unfair_advantage": "INR pricing, WhatsApp Business API as first-class citizen (not an afterthought), Hindi/regional language UI, and a reseller program targeting the thousands of Indian freelancers already selling automation services to SMBs",
+    "mvp_estimate": "Node.js + Supabase + WhatsApp Cloud API + Google Sheets API; 3 weeks solo dev for core routing and template engine",
+    "agentic_automation": "All form-to-sheet and form-to-WhatsApp routing is event-driven via webhooks \u2014 fires instantly with no human in the loop. Follow-up sequences run on a cron scheduler. WhatsApp message delivery receipts update the dashboard automatically. Support handled by a bilingual (English/Hindi) AI chat widget. Billing via Razorpay subscriptions with automatic dunning. Owner time: under 1 hour/week monitoring delivery failure alerts.",
+    "origin_story": "A Reddit post in r/indianstartups describes a consultant who charges \u20b95,000-\u20b930,000 one-time to build automations for small businesses \u2014 and the comments are flooded with business owners asking for help with exactly this: 'I spend 2 hours every morning copying form responses into WhatsApp and a sheet.' The consultant notes clients are paying one-time fees for what should be a recurring SaaS product. The pain is daily, the workaround is manual, and the existing tools (Zapier, Make) are priced in USD and require technical setup that Indian SMB owners can't navigate alone.",
+    "automation_playbook": "Webhook listeners process every form submission in real time \u2014 no polling, no manual checks. WhatsApp messages sent via Meta's Cloud API with zero human involvement. Google Sheets rows appended via service account credentials stored securely. Follow-up sequences managed by a cron-based queue that checks due dates every 15 minutes. Razorpay handles all billing, renewals, and failed payment retries. Support AI agent trained on product docs handles ~80% of tickets. Owner reviews a daily Slack digest of delivery errors only. Estimated owner time: 45 minutes/week.",
+    "maintenance_hours_per_week": 1,
+    "keywords": [
+      "WhatsApp automation small business India",
+      "Google Forms to WhatsApp",
+      "lead follow up automation India"
+    ],
+    "supporting_urls": [
+      "https://www.reddit.com/r/indianstartups/comments/1u775qs/i_save_small_businesses_20_hoursweek_with_simple/"
+    ],
+    "weighted_total": 107,
+    "checklist": {
+      "ten_plus_posts_same_pain": true,
+      "paying_for_inferior_solution": true,
+      "reachable_channel": true,
+      "mvp_under_4_weeks": true,
+      "price_point_high_enough": true,
+      "hair_on_fire": true,
+      "can_presell": true,
+      "fewer_than_3_competitors": true,
+      "low_maintenance_ops": true
+    },
+    "checklist_passed": 9,
+    "momentum": "unknown",
+    "rising_queries": [],
+    "gate_result": "passed"
+  },
+  "pain_points": [
+    {
+      "problem": "Small businesses spend countless daily hours manually transferring information from forms or emails into spreadsheets, sending repetitive WhatsApp messages, following up on invoices, compiling reports from multiple sources, and losing track of leads.",
+      "persona": "Small business owners in India",
+      "current_workaround": "Manual data entry, spreadsheets, repetitive messaging, disorganized lead management",
+      "frequency": "daily",
+      "wtp_signal": "Already paying \u20b95,000-\u20b930,000 one-time for automation solutions",
+      "url": "https://www.reddit.com/r/indianstartups/comments/1u775qs/i_save_small_businesses_20_hoursweek_with_simple/",
+      "engagement": 0,
+      "source": "reddit"
+    },
+    {
+      "problem": "US business owners are overwhelmed with paperwork, tracking unpaid invoices, and spending countless hours on repetitive tasks that drain motivation.",
+      "persona": "US small business owners",
+      "current_workaround": "Manual paperwork handling, manual invoice tracking, repetitive task execution",
+      "frequency": "daily",
+      "wtp_signal": "Implied willingness to adopt tools that solve genuine challenges",
+      "url": "https://www.reddit.com/r/SampleSize/comments/1uir9j4/casual_quick_question_for_us_business_ownerswhats/",
+      "engagement": 0,
+      "source": "reddit"
+    },
+    {
+      "problem": "Content creators and AI workflow users waste time manually copying AI responses, pasting them into the next prompt, and repeating this process across multiple steps instead of having responses automatically transfer between sequential prompts.",
+      "persona": "Content creators, prompt engineers, knowledge workers using AI tools",
+      "current_workaround": "Manual copy-paste between prompts, reviewing and modifying outputs manually between steps",
+      "frequency": "daily",
+      "wtp_signal": "Built a Chrome extension (Workflowly) to solve this, indicating significant time investment",
+      "url": "https://www.reddit.com/r/PromptEngineering/comments/1ukffkj/a_simple_ai_workflow_thats_saving_me_a_lot_of/",
+      "engagement": 0,
+      "source": "reddit"
+    },
+    {
+      "problem": "QuickBooks users are frustrated by constant feature bloat, software lag, persistent bugs, and forced payment for features they don't use when they only need basic invoicing functionality.",
+      "persona": "Small business owners, freelancers using QuickBooks for invoicing",
+      "current_workaround": "Continue using QuickBooks despite frustration, or search for alternative accounting software",
+      "frequency": "daily",
+      "wtp_signal": "Currently paying for QuickBooks subscription",
+      "url": "https://www.reddit.com/r/QuickBooks/comments/1upx7n5/where_are_people_moving_to_qb_is_driving_me/",
+      "engagement": 0,
+      "source": "reddit"
+    },
+    {
+      "problem": "Knowledge workers struggle with context switching and mental overhead from managing multiple tasks like coding, emails, and administrative appointments, losing focus on primary work.",
+      "persona": "Software developers, knowledge workers",
+      "current_workaround": "Manual task management, context switching between work and personal tasks",
+      "frequency": "daily",
+      "wtp_signal": "Explicit statement 'I'd pay for something to deal with that'",
+      "url": "https://news.ycombinator.com/item?id=48885443",
+      "engagement": 0,
+      "source": "hackernews"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-900 text-gray-100 antialiased;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-400 to-emerald-300 bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply rounded-xl border border-white/10 bg-surface-800/80 backdrop-blur-sm;
+  }
+}
